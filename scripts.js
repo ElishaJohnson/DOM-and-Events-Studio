@@ -44,15 +44,15 @@ window.addEventListener("load", function() {
     });
 
     leftButton.addEventListener("click", function(event) {
-        if (flightStatus.innerHTML === "Shuttle in flight." && rocketXposition > -46) {
-            rocketXposition -= 3.9;
+        if (flightStatus.innerHTML === "Shuttle in flight." && rocketXposition > -44) {
+            rocketXposition -= 3.75;
             rocket.style.left = rocketXposition + "%";
         }
     });
 
     rightButton.addEventListener("click", function(event) {
-        if (flightStatus.innerHTML === "Shuttle in flight." && rocketXposition < 46) {
-            rocketXposition += 3.9;
+        if (flightStatus.innerHTML === "Shuttle in flight." && rocketXposition < 44) {
+            rocketXposition += 3.75;
             rocket.style.left = rocketXposition + "%";
         }
     });
